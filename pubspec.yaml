@@ -1,6 +1,6 @@
 name: pkb_security_rasp
 description: RASP security plugin for Flutter detecting Frida, Root/JB, Debugger, DevOptions, Emulator and App Tampering.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/pirapong/pkb_security_rasp
 
 environment:
