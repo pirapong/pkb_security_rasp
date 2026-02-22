@@ -93,13 +93,10 @@ public class FlutterSecurityRaspPlugin: NSObject, FlutterPlugin {
 
   private func isDeveloperMode() -> Bool {
     #if DEBUG
-    return true
+    return true   // block เฉพาะ debug build
     #else
-    if Bundle.main.appStoreReceiptURL?.lastPathComponent == "sandboxReceipt" {
-      return true
-    }
+    return false  // TestFlight และ App Store ไม่โดน
     #endif
-    return false
   }
 
   // MARK: - Tamper Detection
